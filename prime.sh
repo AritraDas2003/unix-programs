@@ -8,7 +8,7 @@ read end
 
 echo "Prime numbers between $start and $end are:"
 
-for ((num=start; num<=end; num++))
+for ((num=$start; num<=$end; num++))
 do
     flag=0
 

@@ -1,45 +1,43 @@
 #!/bin/bash
 
 echo "Main menu"
-echo "1.Adition"
-echo "2.Substraction"
-echo "3.Multiplication"
-echo "4.Division"
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
 
-echo -n "enter your choice: "
+echo -n "Enter your choice: "
 read ch
 
-echo -n "Enter first number"
+echo -n "Enter first number: "
 read a
 
-echo -n "Enter second number"
+echo -n "Enter second number: "
 read b
 
 case $ch in
     1)
-        sum=$(($a+$b))
-        echo "adition: $sum"
+        sum=$(($a + $b))
+        echo "Addition: $sum"
         ;;
     2)
-        sub=$(($a-$b))
-        echo "substraction: $sub"
+        sub=$(($a - $b))
+        echo "Subtraction: $sub"
         ;;
     3)
-        mul=$(($a*$b))
-        echo "multiplication: $mul"
+        mul=$(($a * $b))
+        echo "Multiplication: $mul"
         ;;
     4)
-        if[$b -eq 0]
+        if [ $b -eq 0 ]
         then
-            echo "can not divide with 0"
+            echo "Cannot divide by 0"
         else
-            div=$(($a/$b))
-            echo "division: $div"
+            div=$(($a / $b))
+            echo "Division: $div"
         fi
         ;;
     *)
-        echo "invalid choice"
+        echo "Invalid choice"
         ;;
 esac
-                
-
